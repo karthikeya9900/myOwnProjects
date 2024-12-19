@@ -1,0 +1,91 @@
+Input Date    |  Format      |  Expected  |  Actual Result  |  Test category
+2020-10-10    |  yyyy-mm-dd  |  Valid     |  Valid          | it is date which is in a  month calender
+
+2004-02-32    |  yyyy-mm-dd  |  Invalid   |  invalid        |  there only 29 days in this 2004 year february 
+
+2004-02-29    |  yyyy-mm-dd  |  Invalid   |  Valid          |  it is the extra day in the leap year
+
+2006-02-29    |  yyyy-mm-dd  |  Invalid   |  Valid          |  there is no extra day in february month of the 2006 year
+
+2006-01-00    |  yyyy-mm-dd  |  Invalid   |  Invalid        |  there is no date with 00
+
+2006-00-01    |  yyyy-mm-dd  |  Invalid   |  Invalid        |  there is no month with 00 
+
+2006-00-00    |  yyyy-mm-dd  |  Invalid   |  Invalid        | there is no month and date with 00 
+
+2000-01-32    |  yyyy-mm-dd  |  Invalid   |  Invalid        |  there only 31 days in january month
+
+2006-1-30     |  yyyy-mm-dd  |  Valid     |  Invalid        |  sometimes we use single digit to represent the months
+
+2006-01-30    |  yyyy-mm-dd  |  Valid     |  valid          |  there are 31 days in january
+
+2006-01-32    |  yyyy-mm-dd  |  Invalid   |  Invalid        |  there are only 31 days in january
+
+18-10-2023    |  dd-mm-yyyy  |  Valid     |  Invalid        |  date format is correct and it failing
+
+10-18-2023    |  dd-mm-yyyy  |  Valid     |  Invalid        |  date format is correct and it failing
+
+1-1-2023      |  dd-mm-yyyy  |  Valid     |  Invalid        | date format is correct and it failing
+
+01-01-2002    |  dd-mm-yyyy  |  Valid     |  Invalid        | date format is correct and it failing
+
+01-01-2002    |  dd-mm-yyyy  |  Valid     |  Invalid        | date format is correct and it failing
+
+33-05-2002    |  dd-mm-yyyy  |  Invalid    |  Invalid        | ther is no date with  33
+
+12-16-2002    |  dd-mm-yyyy  |  Invalid    |  Invalid        | there is no month with number 16
+
+0-0-2002    |  dd-mm-yyyy  |  Invalid     |  Invalid       |  ther are no months and date with 0  
+
+01-01-2002    |  mm-dd-yyyy  |  Valid     |  Invalid        | it valid date
+
+13-01-2002    |  mm-dd-yyyy  |  Invalid     |  Invalid        | no month with nuber 13
+
+01-32-2002    |  mm-dd-yyyy |  Invalid     |  Invalid        | no date with 32
+
+01-15-2024   |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+04-17-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+06-26-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+07-02-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+8-9-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+10-24-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+10-26-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+11-09-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender calender
+
+12-15-2024    |  mm-dd-yyyy |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+0-0-0000    |  mm-dd-yyyy |  Invalid     |  Invalid        | it is not a date
+
+00-00-0000    |  dd-mm-yyyy |  Invalid     |  Invalid        | it is not a date
+
+0000-00-00    |  yyyy-mm-dd |  Invalid    |  Invalid        | it is not a date
+
+2024-10-10    |  yyyy-mm-dd |  Valid     |  Valid        | one of the day's in 2024 calender
+
+2024-10-1    | yyyy-mm-dd |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+2024-10-9    |  yyyy-mm-dd |  Valid     |  Invalid        | one of the day's in 2024 calender
+
+2024-10-09    |  yyyy-mm-dd |  Valid     |  Valid        | one of the day's in 2024 calender
+
+2025-01-01    |  yyyy-mm-dd |  Valid     |  Invalid        | first day in 2025 calender
+
+2025-10-09    |  yyyy-mm-dd |  Valid     |  Invalid        | one of the day's in 2025 calender
+
+2024-12-31    |  yyyy-mm-dd |  Valid     |  Valid        | last day of 2024 calender
+
+15-06-2025    |  dd-mm-yyyy |  valid     |  Invalid      | one of the days in 2025 calender
+
+10-10-2024    |  mm-dd-yyyy |  valid     |  Invalid      | one of the days in 2025 calender
+
+2024-10-10    |  dd-mm-yyyy |  valid     |  Invalid      | one of the days in 2024 calender
+
+15-06-2025    |  dd-mm-yyyy |  valid     |  Invalid      | one of the days in 2025 calender
+
